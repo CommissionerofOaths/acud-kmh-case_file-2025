@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>e-Portal Services</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+  }
+
+  /* Header row */
+  .header {
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  /* Second row layout */
+  .date-time-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .date-time-row div { padding: 5px; }
+  #date { text-align: center; }
+  #time { text-align: right; padding-right: 25px; }
+
+  /* Reduced blank space */
+  .spacer { height: 60px; }
+
+  /* Memorandum heading */
+  .memorandum {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: darkred;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  /* First Table styles */
+  table.main-table {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid red;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  table.main-table td {
+    border: 1px solid red;
+    padding: 8px;
+    vertical-align: top;
+  }
+  table.main-table tr:nth-child(odd) { background-color: #f9f9f9; }
+  table.main-table tr:nth-child(even) { background-color: #eef6f3; }
+  table.main-table td:first-child { width: 35%; font-weight: bold; }
+  table.main-table td:nth-child(2) { width: 5%; text-align: center; }
+  table.main-table td:nth-child(3) { width: 60%; }
+
+  /* Second Table styles */
+  table.blue-table {
+    width: 90%;
+    margin: 30px auto;
+    border: 4px double darkblue;
+    border-top: 6px double red;
+    border-bottom: 6px double red;
+    background-color: yellow;
+    color: darkred;
+    border-collapse: collapse;
+  }
+  table.blue-table td {
+    border: 2px solid darkblue;
+    padding: 10px;
+    vertical-align: top;
+  }
+  table.blue-table h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  /* Button style */
+  .btn {
+    display: block;
+    margin: 30px auto;
+    background-color: lightgreen;
+    color: darkred;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn:hover { background-color: #a5d6a7; }
+
+  /* Published line */
+  .published {
+    text-align: left;
+    margin: 20px;
+    font-weight: bold;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header { font-size: 1.5em; }
+    table { font-size: 0.9em; }
+    .btn { width: 90%; font-size: 1em; }
+    #time { padding-right: 10px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- First Row -->
+  <div class="header">e-Portal Services</div>
+
+  <!-- Second Row with Date & Time -->
+  <div class="date-time-row">
+    <div></div>
+    <div id="date">--/--/----</div>
+    <div></div>
+    <div></div>
+    <div id="time">--:--:--</div>
+  </div>
+
+  <!-- Reduced Blank Space -->
+  <div class="spacer"></div>
+
+  <!-- Memorandum Heading -->
+  <div class="memorandum">Official Memorandum of the case</div>
+
+  <!-- Main Table -->
+  <table class="main-table">
+    <tr>
+      <td colspan="3" style="text-align:center;">
+        <h1><b>Accused Executed Non refundable Deposit for Bail Bond</b></h1>
+      </td>
+    </tr>
+    <tr>
+      <td>Name of the Accused</td><td>:</td><td>KAMESH S/o Vijayan</td>
+    </tr>
+    <tr>
+      <td>Age and Address of the Accused</td><td>:</td>
+      <td>Age: 23,<br>Address:<br>Othiyathur Road,<br>Bramanamangalam,<br>Anicut Taluk,<br>Vellore Taluk</td>
+    </tr>
+    <tr>
+      <td>Name of the Police Station</td><td>:</td><td>Pallikonda</td>
+    </tr>
+    <tr>
+      <td>Counts of Sureties</td><td>:</td><td>2 Counts each persons must ensure Rs.50,000/- value</td>
+    </tr>
+    <tr>
+      <td>Non-refundable Deposit Extraction</td><td>:</td>
+      <td>2,25,000/- (Two Lakhs Twenty Five Thousand Only).<br>
+      Utilisation of the fund: Orphanage Homes children welfare.<br>
+      In Regional Language:<br><b>ஆதரவு அற்ற குழந்தைகள் நலனுக்கான ஹோம் தொகையினை பயன்படுத்த அனுமதிக்கப்படுகிறது.</b></td>
+    </tr>
+    <tr>
+      <td>Fund Deposit Details</td><td>:</td>
+      <td>By Through Advocate of the Accused: Mr.G.P. had submitted the cash on behalf of the Accused Kamesh.
+      And, the cash verified by the Special Officer.<br>
+      1 Guarantor Name: R. Mathesh, Chennai undertaking all financial burden on behalf of the Accused Kamesh.</td>
+    </tr>
+    <tr>
+      <td>Police and Government Advocate Report</td><td>:</td>
+      <td><b>Accused Kamesh committed offences in various places, Chennai, Vellore, Tirupattur, Ranipet, etc. in other districts police investigation is not completed. Furthermore legal action will take by the District Magistrate.</b></td>
+    </tr>
+    <tr>
+      <td>Present Case Status</td><td>:</td>
+      <td>Accused Number 2 namely K.VISHVA family approach Hon'ble High Court. Further, Accused Kamesh accepted strong terms of this Court. Hence, the Accused Kamesh released on Bail based on Cash Security and General Sureties. And, Guarantor.</td>
+    </tr>
+  </table>
+
+  <br><br><br>
+
+  <!-- Blue Table -->
+  <table class="blue-table">
+    <tr>
+      <td><h3><b>Monitoring Status of the Case</b></h3></td>
+      <td><h3><b>:</b></h3></td>
+      <td><h3><b>
+        Special Branch will follow up the Accused: Kamesh only.
+        As per the Special Public Prosecutor opinion; after completion of the investigation by the Police, Accused: Kamesh will arrest by other districts police.<br>
+        <Strong> Accused Number 2 namely K.VISHVA S/o Karnal has approached Hon'ble High Court and Part Court Fees paid by accused Vishva's mother. And, accused mother lodged a complaint against the police and such petitions submitted by his mother and the same is pending in various Legal Authorities and Government Secretariat. </Strong>
+      </b></h3></td>
+    </tr>
+    <tr>
+      <td><h3><b>OTHER IMPORTANT INFORMATION</b></h3></td>
+      <td><h3><b>:</b></h3></td>
+      <td><h3><b>
+        Accused Number 2 namely K.Vishva's Jail Report has not received yet. After Report receive punishment action will initiate against him.<br><br>
+        On behalf of the Accused Number 2 namely K.Vishva's Bail Petition submitted on 03/11/2025 and same had been allowed on 05/11/2025 as concise legal terms as General Sureties 2 each ought to be furnished land security value each Rs.25,000/- total secured ensuring value is Rs.50,000/-. If not comply should undertake cash Non-Refundable Deposit as the same.
+      </b></h3></td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <!-- Button -->
+  <button class="btn"> Above Details all are Confidential </button>
+<br><br><br>
+  <!-- Published Line -->
+  <div class="published"> <b> Published on 06/11/2025 :: 14.47.28 P.M.</b></div>
+
+  <!-- Date & Time Script -->
+  <script>
+    function updateDateTimeIST() {
+      const optsDate = { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Asia/Kolkata' };
+      const optsTime = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZone: 'Asia/Kolkata' };
+      const now = new Date();
+      document.getElementById('date').innerText = now.toLocaleDateString('en-GB', optsDate);
+      document.getElementById('time').innerText = now.toLocaleTimeString('en-GB', optsTime);
+    }
+    updateDateTimeIST();
+    setInterval(updateDateTimeIST, 1000);
+  </script>
+
+</body>
+</html>
